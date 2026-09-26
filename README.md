@@ -30,7 +30,7 @@
 
 ### 1. git clone
 ```
-git clone https://github.com/mreza0100/shortly
+git clone https://github.com/rezzminator/shortly
 ```
 ### 2. cd into the directory
 ```
@@ -57,7 +57,7 @@ make run
 
 ### 1. git clone
 ```
-git clone https://github.com/mreza0100/shortly
+git clone https://github.com/rezzminator/shortly
 ```
 ### 2. cd into the directory
 ```
@@ -127,9 +127,9 @@ curl --location --request POST '10.0.0.10:10000/link' \
 # Dictionary
 ```KGS```: KGS = Key Generation System - is a driven adapter used to generate keys. used by service.
 
-```Counter```: the counter is the serial numbers that [KGS](https://github.com/mreza0100/shortly/tree/master/internal/adapters/kgs) walks on to generate the short keys.
+```Counter```: the counter is the serial numbers that [KGS](https://github.com/rezzminator/shortly/tree/master/internal/adapters/kgs) walks on to generate the short keys.
 
-```Shortkey```: The short key is the serial numbers that [KGS](https://github.com/mreza0100/shortly/tree/master/internal/adapters/kgs) creates for the links. Example: ```10.0.0.10:10000/${short_key}```
+```Shortkey```: The short key is the serial numbers that [KGS](https://github.com/rezzminator/shortly/tree/master/internal/adapters/kgs) creates for the links. Example: ```10.0.0.10:10000/${short_key}```
 
 ```Destination```: The destination is the value that shortkey is mapped to. Example: ```google.com```
 
@@ -180,7 +180,7 @@ curl --location --request POST '10.0.0.10:10000/link' \
 ### driven packages will be used by the services to serve the driving packages.
 ### Example:
 - Repository
-- [KGS](https://github.com/mreza0100/shortly/tree/master/internal/adapters/kgs) special for this project
+- [KGS](https://github.com/rezzminator/shortly/tree/master/internal/adapters/kgs) special for this project
 - Cache database Repository
 - Internal cache Layer
 - Extra code from services that can be a utility for the services.
@@ -222,7 +222,7 @@ curl --location --request POST '10.0.0.10:10000/link' \
 ```
 # 🤔 Technical plans:
 - Change architecture to microservices.
-- Make [KGS](https://github.com/mreza0100/shortly/tree/master/internal/adapters/kgs) a new service with cached data to solve the latency issue about the real-time generation of short links.
+- Make [KGS](https://github.com/rezzminator/shortly/tree/master/internal/adapters/kgs) a new service with cached data to solve the latency issue about the real-time generation of short links.
 - Implement CQS (Command-Query Separation).
 - Make link shortener a microservice cluster with a load balancer between reading and write services.
 - Implement an internal cache layer for HOT links in the code to improve the performance of the app.
